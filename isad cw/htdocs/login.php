@@ -24,7 +24,7 @@ if (isset($errors) && !empty($errors))
     <div class="row">
         <form action="login_action.php" method="post">
         <div class="form-group">
-            <label for="email">Email Address   (default email is aaa@gmail.com):</label>
+            <label for="email">Email Address   (default email is aaaa@gmail.com):</label>
             <input type="email" class="form-control" name="email" id="email" required>
         </div>
         <div class="form-group">
