@@ -68,7 +68,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     if (empty($errors))
     {
         echo '<div class="container"><div class="row">';
-        echo '<h3 class="text-info">Journey Added</h3></div></div>';
+        echo '<h3 class="text-info">Appointment Added</h3></div></div>';
         include_once('includes/admin_footer.html');
         exit();
     }
@@ -89,7 +89,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 <section role="contentinfo" aria-label="Flight Crew Add Journey Page">
     <div class="container">
         <div class="row">
-            <h2 class="bg-dark text-white">Add Journey</h2>
+            <h2 class="bg-dark text-white">Add Appointment</h2>
         </div>
         <div class="row">
             <form action="admin_add_appointment.php" method="post" id="appointment">
@@ -137,7 +137,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
             </form>
         </div>
         <div class="row">
-            <h3 class="text-info">Current Journeys</h3>
+            <h3 class="text-info">Current appointment</h3>
             <?php
             $database = new Database();
 
