@@ -23,7 +23,7 @@ if (isset($errors) && !empty($errors))
     <div class="row">
         <form action="admin_login_action.php" method="post">
         <div class="form-group">
-            <label for="username">Username  (default username type admin1):</label>
+            <label for="username">Username  (default username type admin):</label>
             <input type="text" class="form-control" name="username" id="username">
         </div>
         <div class="form-group">
