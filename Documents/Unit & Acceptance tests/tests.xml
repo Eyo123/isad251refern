@@ -34,64 +34,8 @@
 		<CustomerAddress2>Plymouth</CustomerAddress2>
 		<CustomerPostcode>PL1 9AN</CustomerPostcode>
 	</RegisterCustomer>
+
 	
-	<CreateFlightPlan correct_result="pass">
-		<FlightPlanCode>IS902</FlightPlanCode>
-		<FlightPlanOrigin>Italy</FlightPlanOrigin>
-		<FlightPlanDestination>Scotland</FlightPlanDestination>
-	</CreateFlightPlan>
-		
-	<CreateJourney correct_result="pass">
-		<JourneyDate>2020-10-07</JourneyDate>
-		<JourneyDepartureTime>10.00</JourneyDepartureTime>
-		<JourneyArrivalTime>12.00</JourneyArrivalTime>
-		<JourneyAvailableSeats>100</JourneyAvailableSeats>
-		<JourneyPrice>200.00</JourneyPrice>
-		<FlightPlanID>1</FlightPlanID>
-	</CreateJourney>
-	
-	<BookFlight bookingId="not zero">
-		<CustomerID>1</CustomerID>
-		<JourneyID>1</JourneyID>
-	</BookFlight>
-	
-	<BookFlight bookingId="zero">
-		<CustomerID>-1</CustomerID>
-		<JourneyID>-1</JourneyID>
-	</BookFlight>
-	
-	<BookFlight bookingId="zero">
-		<CustomerID>1</CustomerID>
-		<JourneyID>-1</JourneyID>
-	</BookFlight>
-	
-	<BookFlight bookingId="zero">
-		<CustomerID>-1</CustomerID>
-		<JourneyID>1</JourneyID>
-	</BookFlight>
-	
-	<SearchFlight correct_result="pass">
-		<Origin>Italy</Origin>
-		<Destination>Scotland</Destination>
-		<Date>2020-10-07</Date>
-	</SearchFlight>
-	
-	<SearchFlight correct_result="fail">
-		<Origin>Italy</Origin>
-		<Destination>Germany</Destination>
-		<Date>2020-10-07</Date>
-	</SearchFlight>
-	
-	<SearchFlight correct_result="fail">
-		<Origin>Egypt</Origin>
-		<Destination>Scotland</Destination>
-		<Date>2020-10-07</Date>
-	</SearchFlight>
-	
-	<SearchFlight correct_result="fail">
-		<Origin>Italy</Origin>
-		<Destination>Scotland</Destination>
-		<Date>2020-10-03</Date>
-	</SearchFlight>
+
 
 </AcceptanceTests>
